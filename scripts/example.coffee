@@ -1,5 +1,5 @@
 module.exports = (robot) ->
-  robot.hear /^want (.*)/i, (msg) ->
+  robot.hear /^todo (.*)/i, (msg) ->
     title = "#{msg.match[1]}"
 
     Trello = require("node-trello")
